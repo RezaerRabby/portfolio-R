@@ -1,9 +1,16 @@
 
 
+"use client";
+
+import {
+  FaEnvelope,
+  FaPhoneAlt,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 bg-slate-950 text-white">
+    <section id="contact" className="py-24 bg-black text-white">
       <div className="max-w-6xl mx-auto px-5">
 
         <h2 className="text-4xl font-bold mb-4 text-center">
@@ -13,9 +20,9 @@ export default function Contact() {
         <p className="text-gray-400 mb-12 text-lg text-center">
           Have a project in mind or just want to connect? I'm always open to
           discussing new opportunities and
-          <br /> collaborations . 
+          <br />
+          collaborations.
         </p>
-        
 
         <div className="grid md:grid-cols-2 gap-12">
 
@@ -32,27 +39,48 @@ export default function Contact() {
               a Full Stack Developer.
             </p>
 
-            <div className="space-y-6">
+            <div className="space-y-8">
 
-              <div>
-                <h4 className="font-semibold">Email</h4>
-                <p className="text-gray-400">
-                  rezaerrabby@gmail.com
-                </p>
+              {/* Email */}
+              <div className="flex items-start gap-4">
+                <div className="bg-cyan-500/20 p-3 rounded-xl">
+                  <FaEnvelope className="text-cyan-400 text-lg" />
+                </div>
+
+                <div>
+                  <h4 className="font-semibold">Email</h4>
+                  <p className="text-gray-400">
+                    rezaerrabby@gmail.com
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <h4 className="font-semibold">Location</h4>
-                <p className="text-gray-400">
-                  Dhaka, Bangladesh
-                </p>
+              {/* Location */}
+              <div className="flex items-start gap-4">
+                <div className="bg-cyan-500/20 p-3 rounded-xl">
+                  <FaMapMarkerAlt className="text-cyan-400 text-lg" />
+                </div>
+
+                <div>
+                  <h4 className="font-semibold">Location</h4>
+                  <p className="text-gray-400">
+                    Dhaka, Bangladesh
+                  </p>
+                </div>
               </div>
 
-              <div>
-                <h4 className="font-semibold">Phone</h4>
-                <p className="text-gray-400">
-                  +8801760 137770
-                </p>
+              {/* Phone */}
+              <div className="flex items-start gap-4">
+                <div className="bg-cyan-500/20 p-3 rounded-xl">
+                  <FaPhoneAlt className="text-cyan-400 text-lg" />
+                </div>
+
+                <div>
+                  <h4 className="font-semibold">Phone</h4>
+                  <p className="text-gray-400">
+                    +8801760 137770
+                  </p>
+                </div>
               </div>
 
             </div>
@@ -60,7 +88,7 @@ export default function Contact() {
           </div>
 
           {/* Right Side */}
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-8">
+          <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-lg">
 
             <h3 className="text-2xl font-semibold mb-6">
               Send a Message
@@ -71,40 +99,29 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Your Name"
-                className="w-full p-4 rounded-xl bg-slate-900 border border-white/10 outline-none"
+                className="w-full p-4 rounded-xl bg-black border border-white/10 outline-none focus:border-cyan-500"
               />
 
               <input
                 type="email"
                 placeholder="Your Email"
-                className="w-full p-4 rounded-xl bg-slate-900 border border-white/10 outline-none"
+                className="w-full p-4 rounded-xl bg-black border border-white/10 outline-none focus:border-cyan-500"
               />
 
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full p-4 rounded-xl bg-slate-900 border border-white/10 outline-none"
+                className="w-full p-4 rounded-xl bg-black border border-white/10 outline-none focus:border-cyan-500"
               />
 
               <textarea
                 rows={5}
                 placeholder="Tell me about your project..."
-                className="w-full p-4 rounded-xl bg-slate-900 border border-white/10 outline-none"
+                className="w-full p-4 rounded-xl bg-black border border-white/10 outline-none focus:border-cyan-500"
               />
 
               <button
-                className="
-                  text-center
-                  w-full
-                  font-semibold
-                  text-white
-                  bg-cyan-500
-                  hover:bg-cyan-600
-                  px-6 py-3
-                  rounded-xl
-                  transition
-                  
-                "
+                className="w-full bg-cyan-500 hover:bg-cyan-600 py-3 rounded-xl font-semibold text-black transition"
               >
                 Send Message
               </button>
@@ -119,4 +136,3 @@ export default function Contact() {
     </section>
   );
 }
-

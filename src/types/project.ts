@@ -4,4 +4,5 @@ export interface Project {
   tech: string[];
   github: string;
   image?: string;
+  website?: string;
 }

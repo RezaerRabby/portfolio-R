@@ -9,11 +9,11 @@ import { projects } from "@/data/projects";
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-24 bg-slate-900 text-white">
+    <section id="projects" className="py-24 bg-black text-white">
       <div className="max-w-6xl mx-auto px-5">
 
         <h2 className="text-4xl font-bold mb-10 text-center">
-          Projects
+          My Projects
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8">

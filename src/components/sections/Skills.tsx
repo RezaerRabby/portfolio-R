@@ -8,7 +8,7 @@ import { FaCode } from "react-icons/fa";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-24 bg-slate-950 text-white">
+    <section id="skills" className="py-24 bg-black text-white">
       <div className="max-w-6xl mx-auto px-5">
 
         <p className="text-cyan-400 text-sm font-semibold uppercase text-center">
