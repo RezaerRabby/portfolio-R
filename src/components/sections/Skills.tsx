@@ -1,3 +1,8 @@
+
+
+"use client";
+
+import { motion } from "framer-motion";
 import { skills } from "@/data/skills";
 
 export default function Skills() {
@@ -10,15 +15,22 @@ export default function Skills() {
 
         <div className="grid md:grid-cols-5 gap-5">
           {skills.map((skill, index) => (
-            <div
+            <motion.div
               key={index}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
               className="bg-slate-800 p-5 rounded-xl text-center"
             >
               {skill.name}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
 }
+
+
+
+
+
