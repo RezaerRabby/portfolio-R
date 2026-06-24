@@ -47,7 +47,7 @@ export default function About() {
               </a>
 
               <a
-                href="/Rezaer-Rabby-CV.pdf"
+                href="/Rezaer-Rabby.pdf"
                 download
                 className="border border-white/20 px-6 py-3 rounded-xl hover:border-cyan-500 transition"
               >
