@@ -1,27 +1,54 @@
 
 
 
+// // import Navbar from "@/components/layout/Navbar";
+// import Footer from "@/components/layout/Footer";
+
+// import Hero from "@/components/sections/Hero";
+// import About from "@/components/sections/About";
 // import Navbar from "@/components/layout/Navbar";
+
+// export default function Home() {
+//   return (
+//     <>
+//       <Navbar />
+
+//        <main>
+//          <Hero />
+//         <About />
+//       </main> 
+
+//       <Footer /> 
+//     </>
+//   );
+// }
+
+
+
+import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
-import Navbar from "@/components/layout/Navbar";
+import Skills from "@/components/sections/Skills";
+import Projects from "@/components/sections/Projects";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
     <>
       <Navbar />
 
-       <main>
-         <Hero />
+      <main>
+        <Hero />
         <About />
-      </main> 
+        <Skills />
+        <Projects />
+        <Contact />
+      </main>
 
-      <Footer /> 
+      <Footer />
     </>
   );
 }
-
-
 
