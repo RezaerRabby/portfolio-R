@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex items-center gap-3">
             <Link
-              href="https://facebook.com/"
+              href="/"
               target="_blank"
               className="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-400 transition"
             >
@@ -55,7 +55,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="https://instagram.com/"
+              href="/"
               target="_blank"
               className="w-10 h-10 rounded-lg border border-white/10 flex items-center justify-center text-gray-400 hover:text-cyan-400 hover:border-cyan-400 transition"
             >
